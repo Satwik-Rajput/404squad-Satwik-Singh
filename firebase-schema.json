@@ -1,0 +1,89 @@
+{
+  "entities": {
+    "Job": {
+      "title": "Job",
+      "description": "Job listing posted by a client",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "category": { "type": "string" },
+        "description": { "type": "string" },
+        "budget": { "type": "number" },
+        "budgetUnit": { "type": "string" },
+        "location": { "type": "string" },
+        "workerName": { "type": "string" },
+        "workerAvatar": { "type": "string" },
+        "workerRating": { "type": "number" },
+        "workerTitle": { "type": "string" },
+        "postedBy": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "status": { "type": "string" }
+      },
+      "required": ["title", "category", "description", "budget", "budgetUnit", "location"]
+    },
+    "Worker": {
+      "title": "Worker",
+      "description": "Freelancer or service worker profile",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "avatar": { "type": "string" },
+        "title": { "type": "string" },
+        "category": { "type": "string" },
+        "rating": { "type": "number" },
+        "hourlyRate": { "type": "number" },
+        "bio": { "type": "string" },
+        "badges": { "type": "string" },
+        "completedJobs": { "type": "number" }
+      },
+      "required": ["name", "category", "hourlyRate"]
+    },
+    "HireRecord": {
+      "title": "HireRecord",
+      "description": "Hire and escrow transaction record",
+      "type": "object",
+      "properties": {
+        "transactionId": { "type": "string" },
+        "jobTitle": { "type": "string" },
+        "category": { "type": "string" },
+        "workerName": { "type": "string" },
+        "workerAvatar": { "type": "string" },
+        "workerTitle": { "type": "string" },
+        "workerId": { "type": "string" },
+        "clientName": { "type": "string" },
+        "clientPhone": { "type": "string" },
+        "clientEmail": { "type": "string" },
+        "location": { "type": "string text" },
+        "durationLabel": { "type": "string" },
+        "subtotal": { "type": "number" },
+        "gstAmount": { "type": "number" },
+        "totalPrice": { "type": "number" },
+        "paymentMethod": { "type": "string" },
+        "paymentDate": { "type": "string" },
+        "completionStatus": { "type": "string" },
+        "proConfirmedTime": { "type": "string" },
+        "userRating": { "type": "number" },
+        "userReview": { "type": "string" }
+      },
+      "required": ["transactionId", "jobTitle", "workerName", "totalPrice", "completionStatus"]
+    }
+  },
+  "firestore": {
+    "/jobs/{jobId}": {
+      "schema": "Job",
+      "description": "Listings of freelance jobs available"
+    },
+    "/workers/{workerId}": {
+      "schema": "Worker",
+      "description": "Freelancer profiles"
+    },
+    "/hires/{hireId}": {
+      "schema": "HireRecord",
+      "description": "Completed hires and escrow payment records"
+    },
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User profile details and settings"
+    }
+  }
+}
