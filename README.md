@@ -149,62 +149,78 @@ SkillBridge AI solves these issues through an AI-assisted hiring ecosystem.
 
 # 📸 Application Preview
 
+SkillBridge AI offers an end-to-end hiring experience that combines AI-powered recommendations, secure escrow payments, and an intuitive user interface. From discovering skilled professionals to completing payments and rating services, every step is designed to make hiring simple, transparent, and trustworthy.
+
+---
+
 ## 🏠 Landing Page
 
 <p align="center">
-<img src="assets/screenshots/01-home.png" width="100%">
+  <img src="images/Landing Page.png" width="100%">
 </p>
 
-> The landing page enables users to instantly discover verified professionals nearby using AI-powered search, location-based recommendations, and category filters. It highlights platform trust through verification badges, hiring statistics, and a streamlined search interface.
+The landing page introduces users to SkillBridge AI with a modern interface showcasing featured services, trusted professionals, platform statistics, and quick navigation. It provides an engaging first impression while encouraging users to explore available services or post their own job requirements.
 
 ---
 
-## ⚡ Dashboard
+## 📊 User Dashboard
 
 <p align="center">
-<img src="assets/screenshots/02-dashboard.png" width="100%">
+  <img src="images/Dashboard.png" width="100%">
 </p>
 
-> The dashboard acts as the central workspace where users can hire professionals, post new jobs, monitor profile completion, manage trust verification, and access personalized recommendations.
+The dashboard serves as the central workspace for users, providing quick access to active jobs, profile completion, hiring history, account management, and personalized recommendations. It ensures users can efficiently manage all their activities from a single location.
 
 ---
 
-## 🎯 AI Recommendations & Service Categories
+## 🤖 AI Smart Recommendation
 
 <p align="center">
-<img src="assets/screenshots/03-categories-ai.png" width="100%">
+  <img src="images/AI recommendation.png" width="100%">
 </p>
 
-> SkillBridge combines categorized service discovery with Gemini AI recommendations to help users quickly find the most suitable professionals based on skills, ratings, experience, and job requirements.
+Powered by Google Gemini AI, SkillBridge intelligently recommends professionals based on skills, experience, ratings, pricing, and user requirements. This reduces search time and helps clients connect with the most suitable worker for every job.
 
 ---
 
-## 👤 Hire Professional
+## 👨‍💼 Hiring Interface
 
 <p align="center">
-<img src="assets/screenshots/04-hire-worker.png" width="100%">
+  <img src="images/Hiring.png" width="100%">
 </p>
 
-> Users can select engagement duration from minutes to months while the platform dynamically calculates pricing based on service duration.
+The hiring interface allows users to review professional details, select hiring duration, calculate pricing dynamically, and confirm bookings with complete transparency before proceeding to payment.
 
 ---
 
-## 💳 Secure Escrow Payment
+## 💳 Secure Payment
 
 <p align="center">
-<img src="assets/screenshots/05-payment.png" width="100%">
+  <img src="images/Payment.png" width="100%">
 </p>
 
-> Payments are securely held in escrow until the service is completed, protecting both the client and the professional throughout the hiring process.
+SkillBridge secures every transaction using an escrow-based payment system. Client funds remain protected until the assigned work has been successfully completed, creating trust for both clients and professionals.
 
 ---
 
-## 🔐 Authentication
+## 👤 User Profile
 
 <p align="center">
-<img src="assets/screenshots/06-login.png" width="65%">
+  <img src="images/Profile.png" width="100%">
 </p>
 
-> Firebase Authentication supports Google Sign-In, email authentication, and guest access for a secure and seamless onboarding experience.
+Users can manage their profile, monitor profile completion, showcase their skills, update personal information, and build credibility through ratings and completed projects, improving their visibility within the platform.
+
+---
+
+## 🔐 Secure Authentication
+
+<p align="center">
+  <img src="images/Login.png" width="75%">
+</p>
+
+Firebase Authentication enables secure sign-in using Google accounts and email authentication. The authentication flow is designed to provide a smooth onboarding experience while maintaining high security standards.
+
+---
 
 ---
