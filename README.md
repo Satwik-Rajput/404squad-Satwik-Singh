@@ -1,4 +1,6 @@
-<div align="center">
+
+| Styling | Tailwind CSS |
+| Animation | Motion |<div align="center">
 
 # 🌉 SkillBridge AI
 
@@ -136,8 +138,6 @@ SkillBridge AI solves these issues through an AI-assisted hiring ecosystem.
 | Category | Technologies |
 |------------|----------------|
 | Frontend | React 19, TypeScript, Vite |
-| Styling | Tailwind CSS |
-| Animation | Motion |
 | Backend | Flask |
 | AI | Google Gemini API |
 | Database | Firebase Firestore |
@@ -224,3 +224,347 @@ Firebase Authentication enables secure sign-in using Google accounts and email a
 ---
 
 ---
+
+# 🔄 Hiring Workflow
+
+SkillBridge AI follows a secure, transparent, and user-friendly hiring process. Every job progresses through a series of well-defined stages, ensuring both the client and the professional are protected by an escrow-based payment system until the work is successfully completed.
+
+<br>
+
+<div align="center">
+
+| Step | Preview |
+|:---:|:---:|
+| **1️⃣ Hire a Professional** | <img src="images/Hiring.png" width="700"> |
+| **2️⃣ Payment Secured in Escrow** | <img src="images/Payment.png" width="700"> |
+| **3️⃣ Job Status Tracking** | <img src="images/Job Status.png" width="700"> |
+| **4️⃣ Work Successfully Completed** | <img src="images/Job Complete.png" width="700"> |
+| **5️⃣ Rate & Review the Professional** | <img src="images/Rating.png" width="700"> |
+
+</div>
+
+---
+
+### 📌 Step 1 — Hire a Professional
+
+The client selects a verified professional, chooses the service duration, reviews the estimated cost, and confirms the booking through a simple and intuitive hiring interface.
+
+➡️ **Hiring → Duration Selection → Booking Confirmation**
+
+---
+
+### 💳 Step 2 — Secure Escrow Payment
+
+Instead of paying the professional directly, the payment is safely stored in an escrow account. This protects both the client and the worker until the agreed work has been completed.
+
+➡️ **Payment → Escrow Created → Job Starts**
+
+---
+
+### 🚀 Step 3 — Live Job Tracking
+
+Once the professional accepts the request, the client can monitor the current status of the job in real time. The dashboard clearly indicates whether the work is pending, in progress, or awaiting confirmation.
+
+➡️ **Accepted → In Progress → Awaiting Completion**
+
+---
+
+### ✅ Step 4 — Job Completion
+
+After finishing the assigned task, the professional marks the work as completed. The client reviews the completed service before approving the final payment release.
+
+➡️ **Worker Marks Complete → Client Verification**
+
+---
+
+### ⭐ Step 5 — Rating & Review
+
+Once the client confirms successful completion, the escrow payment is released automatically. The client can then provide a rating and review, helping maintain trust and improving future AI recommendations.
+
+➡️ **Escrow Released → Rating Submitted → Trust Score Updated**
+
+---
+
+<div align="center">
+
+### 🔒 Secure • 🤖 AI Powered • ⭐ Transparent • 💳 Escrow Protected
+
+</div>
+
+# 🏗️ Project Architecture
+
+SkillBridge AI follows a modular full-stack architecture that separates the frontend, backend, AI services, and cloud infrastructure to ensure scalability and maintainability.
+
+```text
+                    ┌─────────────────────┐
+                    │      Client UI      │
+                    │   React + Vite TS   │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    Firebase Authentication
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │    Flask Backend    │
+                    │   RESTful APIs      │
+                    └──────────┬──────────┘
+                               │
+         ┌─────────────────────┼─────────────────────┐
+         ▼                     ▼                     ▼
+ Firebase Firestore     Google Gemini AI      Escrow Payments
+      Database          Smart Recommendation    Payment Flow
+```
+
+---
+
+# 📂 Project Structure
+
+```text
+SkillBridge-AI
+│
+├── images/                     # README screenshots
+│
+├── src/
+│   ├── ai-development/         # AI recommendation components
+│   ├── backend/                # Backend API integration
+│   ├── components/             # Reusable UI components
+│   ├── data/                   # Static data
+│   ├── find-work/              # Worker discovery pages
+│   ├── frontend/               # Main application pages
+│   ├── job-input/              # Job posting module
+│   ├── lib/                    # Utility functions
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── types.ts
+│
+├── static/
+│   ├── css/
+│   ├── js/
+│   └── data/
+│
+├── app.py                      # Flask backend
+├── firebase.config.json
+├── firebase-schema.json
+├── requirements.txt
+├── package-lock.json
+└── README.md
+```
+
+---
+
+# ⚙️ Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/Satwik-Rajput/404squad-Satwik-Singh.git
+```
+
+```bash
+cd 404squad-Satwik-Singh
+```
+
+---
+
+## Install Frontend Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## Start Frontend
+
+```bash
+npm run dev
+```
+
+---
+
+## Backend Setup
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the Flask server
+
+```bash
+python app.py
+```
+
+---
+
+# 🔥 Firebase Configuration
+
+Create a `.env` file in the project root.
+
+```env
+VITE_FIREBASE_API_KEY=YOUR_API_KEY
+VITE_FIREBASE_AUTH_DOMAIN=YOUR_AUTH_DOMAIN
+VITE_FIREBASE_PROJECT_ID=YOUR_PROJECT_ID
+VITE_FIREBASE_STORAGE_BUCKET=YOUR_STORAGE_BUCKET
+VITE_FIREBASE_MESSAGING_SENDER_ID=YOUR_SENDER_ID
+VITE_FIREBASE_APP_ID=YOUR_APP_ID
+```
+
+---
+
+# 🤖 AI Features
+
+SkillBridge AI integrates **Google Gemini AI** to enhance the hiring experience through intelligent automation.
+
+### AI Capabilities
+
+- 🤖 Smart Professional Recommendation
+- 💰 AI Price Suggestion
+- 🎯 Skill Matching
+- 📊 Experience Analysis
+- ⭐ Rating-Based Ranking
+- 🔍 Intelligent Worker Discovery
+
+---
+
+# 💳 Escrow Payment System
+
+Instead of transferring money directly to the professional, SkillBridge secures payments using an escrow workflow.
+
+```
+Client
+   │
+   ▼
+Escrow Payment
+   │
+   ▼
+Professional Starts Work
+   │
+   ▼
+Job Completed
+   │
+   ▼
+Client Verification
+   │
+   ▼
+Payment Released
+```
+
+This workflow increases trust between both parties while minimizing payment disputes.
+
+---
+
+# 🚀 Future Scope
+
+- 📱 Android & iOS Mobile Application
+- 🌍 Multi-language Support
+- 💬 Real-time Chat
+- 📞 Voice & Video Calling
+- 📍 Live GPS Tracking
+- 🤖 AI Resume Builder
+- 📄 Digital Contracts
+- 🧾 GST Invoice Generation
+- 💼 Business Dashboard
+- 📈 AI Market Demand Prediction
+
+---
+
+# 👨‍💻 Team
+
+<table>
+<tr>
+<td align="center" width="25%">
+
+### 👨‍💻 Satyam Singh
+
+**UI/UX Designer**
+
+- Designed user interface
+- Created user experience flow
+- Responsive layouts
+- Component styling
+- Visual consistency
+
+</td>
+
+<td align="center" width="25%">
+
+### 👨‍💻 Satwik Singh
+
+**API and Integartion**
+
+- React Frontend
+- Flask Backend
+- Firebase Integration
+- API Development
+- Project Architecture
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+### 👨‍💻 Kumar Aayush
+
+**AI & Backend Developer**
+
+- Google Gemini AI
+- Smart Recommendation Engine
+- AI Integration
+- Backend Logic
+- Database Management
+
+</td>
+
+<td align="center">
+
+### 👨‍💻 Kunal Bohra
+
+**Frontend Developer & Testing**
+
+- UI Components
+- Feature Integration
+- Testing
+- Bug Fixing
+- Performance Optimization
+
+</td>
+</tr>
+
+</table>
+
+---
+
+# 🏆 Project Highlights
+
+- 🤖 AI-Powered Hiring Platform
+- 🔒 Secure Firebase Authentication
+- 💳 Escrow Payment Workflow
+- ⭐ Professional Rating System
+- 📊 Smart Dashboard
+- ⚡ Responsive React Application
+- 🚀 Google Gemini AI Integration
+- 🔥 Firebase Firestore Database
+- 🎯 Dynamic Pricing
+- 🌐 Cloud Deployment
+
+---
+
+# 📄 License
+
+This project was developed for educational and hackathon purposes.
+
+Feel free to explore, learn from, and build upon the project.
+
+---
+
+<div align="center">
+
+## ⭐ If you like this project, don't forget to star the repository!
+
+### Made with ❤️ by Team SkillBridge AI
+
+**Building the future of local hiring through AI.**
+
+</div>
