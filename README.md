@@ -1,10 +1,19 @@
+<div align="center">
 
-| Styling | Tailwind CSS |
-| Animation | Motion |<div align="center">
+<img src="images/banner.png" alt="SkillBridge AI Banner" width="100%">
 
 # 🌉 SkillBridge AI
 
 ### *AI-Powered Freelance & Local Hiring Platform with Secure Escrow Payments*
+
+<p>
+  <a href="https://skill-bridge.pages.dev">
+    <img src="https://img.shields.io/badge/🚀_Live_Demo-Visit_SkillBridge_AI-2563EB?style=for-the-badge" />
+  </a>
+  <a href="https://github.com/Satwik-Rajput/404squad-Satwik-Singh">
+    <img src="https://img.shields.io/badge/📂_GitHub-Repository-181717?style=for-the-badge&logo=github" />
+  </a>
+</p>
 
 <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white"/>
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
@@ -14,7 +23,9 @@
 <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask"/>
 <img src="https://img.shields.io/badge/TailwindCSS-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white"/>
 
-<div align="center">
+</div>
+
+---
 
 ## 🌐 Live Demo
 
